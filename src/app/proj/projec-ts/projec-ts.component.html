@@ -1,0 +1,11 @@
+    <div class="grid grid-cols-2 mx-auto text-center">
+        <div *ngFor="let pho of screenshotsProjects" class="bg-red-400 bg-opacity-10  text-white">
+            <div class="size-3/4 sm:size-1/2 mx-auto border-2 sm:border-1 border-white shadow-white shadow-inner">
+            <img [src]="pho.ImG" alt="project" [title]="pho.tit" class="w-fit sm:w-full size-40 sm:size-full p-5 sm:p-2">
+            <h2 class="bg-red-100 bg-opacity-10 text-white text-2xl sm:text-[0.9rem] font-semibold me-2  mb-5 px-2.5 py-2 rounded "><span class="cursor-grabbing"  [routerLink]="['/projects/Details',pho.tit]">{{pho.tit}}</span></h2>
+            </div>
+        </div>
+        <div>
+            <button class="p-4 sm:m-9 mt-12 sm:mt-2 shadow-2xl shadow-blue-500 hover:bg-red-500 hover:shadow-2xl hover:shadow-slate-900 rounded-3xl"><span class="text-blue-400 text-[1.4rem] sm:text-[1rem]"><a href="https://drive.google.com/file/d/1g9DD3uzvB2kSo2VjibxpSVr-TLVFGHAk/view?usp=sharing" target="_blank">Download Resume</a> </span></button>
+        </div>
+    </div>

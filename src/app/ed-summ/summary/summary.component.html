@@ -1,0 +1,17 @@
+<section class="bg-red-400 bg-opacity-10 h-screen text-center">
+    <div>
+        <button class="p-4 mt-2 sm:p-2 sm:mt-1 shadow-2xl shadow-blue-500 hover:bg-red-500 hover:shadow-2xl hover:shadow-slate-900 rounded-3xl" routerLink="/about/education"><span
+                class="text-blue-400 text-[1.25rem] sm:text-[1.2rem]">Education</span></button>
+    </div>
+    <div class="text-red-700">
+       <p class="text-white text-xl sm:text-[0.95rem] text-start mt-4 sm:mt-2 mb-4 sm:mb-2 ms-3"> I'm Frontend developer specializing in :</p>
+        <div *ngFor="let lang of  specialist" class="flex justify-center mt-3">
+            <div class="lg:w-[4.3rem] md:w-14">
+                <img [src]="lang.ImG" alt="" class="w-fit sm:w-12 mx-auto">
+            </div>
+        </div>
+    </div>
+    <div>
+       <p class="text-white text-xl text-start mt-5 sm:mt-4 sm:text-[0.9rem]  ms-3">I have a basic background in c++ , Algorithms and Data Structure.</p>
+    </div>
+</section>

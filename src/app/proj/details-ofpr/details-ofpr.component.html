@@ -1,0 +1,19 @@
+<section class="bg-red-400 bg-opacity-10 h-screen  text-white p-2">
+  <div class="grid grid-cols-1 mx-auto text-center pb-32">
+    <div>
+      <img [src]="Nour" [alt]="Noureen" [title]="Noureen"
+        class="opacity-80 bg-transparent hover:shadow-2xl hover:shadow-blue-600 w-fit">
+    </div>
+    <div>
+      <h2 class="text-xl sm:text-[0.9rem] mt-6 w-fit mx-auto hover:shadow-2xl hover:shadow-blue-300 ">{{Nour1}}</h2>
+    </div>
+    <div class="flex justify-around mt-8 sm:mt-10">
+      <a [href]="Nour2" target="_blank"><button
+          class="p-4 sm:p-2  sm:text-[0.9rem] shadow-2xl shadow-blue-500 hover:bg-red-500 hover:shadow-2xl hover:shadow-slate-900 rounded-3xl"><i
+            class="fa-regular fa-eye me-3 sm:text-[0.9rem]"></i>Demo</button></a>
+      <button routerLink="/projects/cvPdf"
+        class="p-4 sm:p-2 sm:text-[0.9rem]  shadow-2xl shadow-blue-500 hover:bg-red-500 hover:shadow-2xl hover:shadow-slate-900 rounded-3xl">Back
+        TO Projects</button>
+    </div>
+  </div>
+</section>

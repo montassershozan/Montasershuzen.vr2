@@ -1,0 +1,54 @@
+<!-- navbar -->
+
+<section>
+    <div class="hidden container" id="navbar">
+        <nav class="relative">
+            <div
+                class="fixed  top-0 start-0 bottom-0 bg-[#281212] sm:z-30 p-9 sm:p-3  shadow-2xl sm:shadow-xl shadow-red-950 ">
+                <div class="*:uppercase  *:rounded-xl *:block *:p-1  *:mt-2 sm:*:mt-5 *:size-28 sm:*:size-20">
+                    <button class="hover:shadow-2xl hover:shadow-red-400" routerLink="introduction"
+                        [routerLinkActive]="['bg-black','transition','hover:bg-red-800' ,'active:ring-4','active:ring-white' , 'shadow-red-800','text-xl','sm:text-[0.9rem]','outline','outline-2','outline-red-400']"><span
+                            class="text-red-300 text-[1.15rem] sm-text-[0.8rem] font-bold ">intro</span></button>
+
+                    <button class="hover:shadow-2xl hover:shadow-red-400" routerLink="about"
+                        [routerLinkActive]="['bg-black','transition','hover:bg-red-800' ,'active:ring-4','active:ring-white' , 'shadow-red-800','text-xl','sm:text-[0.9rem]','outline','outline-2','outline-red-400']"><span
+                            class="text-red-300 text-[1.15rem] font-bold sm-text-[0.8rem]">about</span></button>
+
+                    <button class="hover:shadow-2xl hover:shadow-red-400" routerLink="experience"
+                        [routerLinkActive]="['bg-black','transition','hover:bg-red-800' ,'active:ring-4','active:ring-white' , 'shadow-red-800','text-xl','sm:text-[0.9rem]','outline','outline-2','outline-red-400']"><span
+                            class="text-red-300 text-[1rem] font-bold sm-text-[0.8rem]">experience</span></button>
+
+                    <button class="hover:shadow-2xl hover:shadow-red-400" routerLink="projects"
+                        [routerLinkActive]="['bg-black','transition','hover:bg-red-800' ,'active:ring-4','active:ring-white' , 'shadow-red-800','text-xl','sm:text-[0.9rem]','outline','outline-2','outline-red-400']"><span
+                            class="text-red-300 text-[1.15rem] font-bold sm-text-[0.8rem]">projects</span></button>
+                </div>
+            </div>
+        </nav>
+        <svg class="rotate-90 fixed lg:left-[-3.7rem] ll:left-[1.5rem] ll:h-[72%] lg:h-[64%] sm:hidden lg:w-[63%] md:left-[7rem] md:h-[73%]  md:w-[76%] sm:left-[9rem] sm:h-[83%]  sm:w-[83%] top-0 shadow-md sm:shadow-none shadow-red-400"
+            width="63%" height="64%" viewBox="0 0 750 750" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            overflow="auto" shape-rendering="auto" fill="#281212">
+            <defs>
+                <path id="wavepath"
+                    d="M 0 2000 0 500 Q 62.5 350 125 500 t 125 0 125 0 125 0 125 0 125 0 125 0 125 0 125 0 125 0 125 0  v1000 z" />
+                <path id="motionpath" d="M -250 0 0 0" />
+            </defs>
+            <g>
+                <use xlink:href="#wavepath" y="126" fill="#281212">
+                    <animateMotion dur="0.95s" repeatCount="indefinite">
+                        <mpath xlink:href="#motionpath" />
+                    </animateMotion>
+                </use>
+            </g>
+        </svg>
+    </div>
+    <div>
+        <div class="absolute top-1/2 start-2 z-50">
+            <button id="btnhide"><span class="text-red-500 text-[2.5rem] md:text-[2rem]  sm:text-[1.5rem]"><i
+                        class="fa-solid fa-circle-arrow-right "></i></span></button>
+        </div>
+        <div class="absolute top-1/2 start-72 z-50">
+            <button class="hidden" id="btnhide2"><span class="text-red-500 text-[2.5rem] md:text-[2rem] sm:text-[1.5rem]"><i
+                        class="fa-solid fa-circle-arrow-left"></i></span></button>
+        </div>
+    </div>
+</section>
